@@ -1,0 +1,42 @@
+{
+  "name": "nodecli",
+  "version": "1.0.0",
+  "description": "A simple Node App to implement a Command Line Interface.",
+  "main": "src/index.js",
+  "bin": {
+    "falsegod/nodecli": "bin/nodecli",
+    "nodecli": "bin/nodecli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "nodecli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FalseG0d/NodeCLI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FalseG0d/NodeCLI/issues"
+  },
+  "homepage": "https://github.com/FalseG0d/NodeCLI#readme",
+  "dependencies": {
+    "arg": "^4.1.3",
+    "chalk": "^4.1.0",
+    "enquirer": "^2.3.6",
+    "esm": "^3.2.25",
+    "execa": "^4.1.0",
+    "inquirer": "^7.3.3",
+    "listr": "^0.14.3",
+    "my-dependency": "^1.0.1",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
+  }
+}

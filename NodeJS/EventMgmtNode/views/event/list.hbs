@@ -1,0 +1,26 @@
+<h3><ensp><a class="btn btn-secondary" href="/events"><i class="fa fa-plus"></i>  Create New</a>   Event List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Venue</th>
+            <th>Comments</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.eventName}}</td>
+            <td>{{this.date}}</td>
+            <td>{{this.venue}}</td>
+            <td>{{this.comments}}</td>
+            <td>
+                <a href="/events/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/events/delete/{{this._id}}" onclick="return confirm('Are you sure you want to delete is event?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

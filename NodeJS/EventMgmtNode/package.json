@@ -1,0 +1,31 @@
+{
+    "name": "eventmgmtnode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=production node app",
+        "dev": "cross-env NODE_ENV=development nodemon app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FalseG0d/EventMgmtNode.git"
+    },
+    "author": "Apoorv Garg",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/FalseG0d/EventMgmtNode/issues"
+    },
+    "homepage": "https://github.com/FalseG0d/EventMgmtNode#readme",
+    "dependencies": {
+        "bcrypt": "^4.0.1",
+        "body-parser": "^1.19.0",
+        "crossenv": "0.0.2-security",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "handlebars": "^4.7.6",
+        "mongoose": "^5.9.3",
+        "nodemon": "^2.0.2"
+    }
+}

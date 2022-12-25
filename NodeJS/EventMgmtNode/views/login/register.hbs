@@ -1,0 +1,24 @@
+<h3>Register</h3>
+<div class="text-danger">
+    {{this.message}}
+</div>
+<form action="/register" method="POST">
+    <div class="form-group">
+        <label>User Name: </label>
+        <input type="text" class="form-control" name="userName" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <label>Email: </label>
+        <input type="email" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label>Password: </label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-user"></i>  Register User</button>
+    </div>
+</form>
+
+<label>Already a User</label>
+<a href="/">Login</a>
