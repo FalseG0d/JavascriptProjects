@@ -1,0 +1,13 @@
+<div class="div my-3">
+    <p>{{todo.sno}}</p>
+    <h3 [ngClass]="{'strike' : !todo.active}">{{todo.title}}</h3>
+    <p>{{todo.desc}}</p>
+    
+    <div *ngIf="todo.active; else deleteButton">
+        <button class="btn btn-success" (click)="completeTodo(todo)">Check</button>
+    </div>
+    
+    <ng-template #deleteButton>
+        <button class="btn btn-danger" (click)="deleteTodo(todo)">Delete</button>
+    </ng-template>
+</div>

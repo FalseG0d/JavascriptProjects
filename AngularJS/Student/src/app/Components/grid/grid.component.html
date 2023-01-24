@@ -1,0 +1,44 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Class</th>
+        <th scope="col">Club</th>
+        <th scope="col">Personal</th>
+        <th scope="col">Crush</th>
+        <th scope="col">Height</th>
+        <th scope="col">Strength</th>
+        <th scope="col">Hairstyle</th>
+        <th scope="col">Color</th>
+        <th scope="col">Stockings</th>
+        <th scope="col">Accessory</th>
+        <!-- <th scope="col">Performance</th> -->
+        <th scope="col">English</th>
+        <th scope="col">Science</th>
+        <th scope="col">Math</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of data">
+            <td>{{student.ID}}</td>
+            <td>{{student.Name}}</td>
+            <td>{{student.Gender}}</td>
+            <td>{{student.Class}}</td>
+            <td>{{student.Club}}</td>
+            <td>{{student.Personal}}</td>
+            <td>{{student.Crush}}</td>
+            <td>{{student.Height}}</td>
+            <td>{{student.Strengtd}}</td>
+            <td>{{student.Hairstyle}}</td>
+            <td>{{student.Color}}</td>
+            <td>{{student.Stockings}}</td>
+            <td>{{student.Accessory}}</td>
+            <!-- <td>{{student.Performance}}</td> -->
+            <td>{{student.Performance.English}}</td>
+            <td>{{student.Performance.Science}}</td>
+            <td>{{student.Performance.Math}}</td>
+        </tr>
+    </tbody>
+  </table>
